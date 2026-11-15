@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dimmv2e4kwtcv"]
 
 [ext_resource type="Texture2D" uid="uid://ubexjnfqdkea" path="res://assets/sea.jpg" id="1_06t4h"]
-[ext_resource type="Script" path="res://main_menu.gd" id="1_7vrkn"]
+[ext_resource type="Script" uid="uid://c0j5bgpks6wot" path="res://main_menu.gd" id="1_7vrkn"]
 
 [node name="main menu" type="Node2D" unique_id=722910475]
 script = ExtResource("1_7vrkn")
