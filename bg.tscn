@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://bt6uyia3m1ux1"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_1vivr"]
+
 [node name="BG" type="Node2D" unique_id=1268395760]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=734502417]
+texture = SubResource("AtlasTexture_1vivr")
