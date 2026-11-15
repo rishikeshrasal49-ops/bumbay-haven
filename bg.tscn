@@ -16,6 +16,7 @@ size = Vector2(181.4849, 20)
 [node name="BG" type="Node2D" unique_id=1268395760]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=734502417]
+texture_filter = 1
 position = Vector2(1851.5, 330)
 scale = Vector2(5.3585715, 1.9542857)
 texture = SubResource("AtlasTexture_1vivr")
@@ -49,4 +50,12 @@ scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_1vivr")
 
 [node name="CharacterBody2D" parent="." unique_id=533223432 instance=ExtResource("3_36ycx")]
-position = Vector2(534, 471)
+position = Vector2(517, 471)
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=1664713332]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" unique_id=128529695]
+position = Vector2(703, 232)
+texture = ExtResource("2_iq1of")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=9560945]

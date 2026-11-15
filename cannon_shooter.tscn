@@ -1,30 +1,22 @@
 [gd_scene format=3 uid="uid://4xap1andim4v"]
 
 [ext_resource type="Script" uid="uid://cf3jkc1hioxvx" path="res://character_body_2d.gd" id="1_hbr3n"]
-[ext_resource type="Script" uid="uid://ctjxlqha0exh3" path="res://cannon_shooter.gd" id="1_n4fop"]
 [ext_resource type="Texture2D" uid="uid://dfg735jfosvvn" path="res://assets/canon.png" id="2_n4fop"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4fop"]
 size = Vector2(36, 17)
 
-[node name="Node2D" type="Node2D" unique_id=1268489729]
-position = Vector2(386, 386)
-script = ExtResource("1_n4fop")
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1112888992]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=810688954]
 position = Vector2(3, 0)
 script = ExtResource("1_hbr3n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1779466076]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=525304242]
 position = Vector2(-2, 1)
 scale = Vector2(1, 0.9754862)
 shape = SubResource("RectangleShape2D_n4fop")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=729881929]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=9608983]
 position = Vector2(2, 2.234)
 rotation = -1.5707964
 scale = Vector2(0.14080344, 0.12564991)
 texture = ExtResource("2_n4fop")
-
-[node name="Node2D" type="Node2D" parent="." unique_id=670785192]
-position = Vector2(3, 0)
