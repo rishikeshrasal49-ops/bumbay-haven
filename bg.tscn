@@ -16,20 +16,34 @@ size = Vector2(181.4849, 20)
 [node name="BG" type="Node2D" unique_id=1268395760]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=734502417]
-position = Vector2(560, 330)
-scale = Vector2(1.6685715, 1.9542857)
+position = Vector2(1851.5, 330)
+scale = Vector2(5.3585715, 1.9542857)
 texture = SubResource("AtlasTexture_1vivr")
 
 [node name="tackle" type="Sprite2D" parent="." unique_id=1115580104]
-position = Vector2(642.99994, 689)
+position = Vector2(2336.1882, 691.50867)
 rotation = 0.0014816177
-scale = Vector2(7.3349056, 4.8626375)
+scale = Vector2(23.3084, 4.8626375)
 texture = SubResource("AtlasTexture_8vrlf")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="tackle" unique_id=83909672]
 position = Vector2(1.7729512, 0.6129874)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tackle/StaticBody2D" unique_id=1583218635]
+position = Vector2(-4.0337524, -12.338989)
+scale = Vector2(1, 0.9999999)
+shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="tackle2" type="Sprite2D" parent="." unique_id=1727342104]
+position = Vector2(2091, -17)
+rotation = -3.146113
+scale = Vector2(23.3084, 4.8626375)
+texture = SubResource("AtlasTexture_8vrlf")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="tackle2" unique_id=1264724137]
+position = Vector2(1.7729512, 0.6129874)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tackle2/StaticBody2D" unique_id=62044343]
 position = Vector2(-4.0337524, -12.338989)
 scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_1vivr")
