@@ -1,12 +1,10 @@
 [gd_scene format=3 uid="uid://co4fhvtqola8o"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_b7p3s"]
+[ext_resource type="Texture2D" uid="uid://by42afb2cd3dk" path="res://assets/plankclean.png" id="1_0e48y"]
 
-[node name="Node2D" type="Node2D" unique_id=925119536]
+[node name="Node2D" unique_id=925119536]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1602161158]
-
-[node name="AnimatableBody2D" type="AnimatableBody2D" parent="CharacterBody2D" unique_id=2079530834]
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=445617976]
-texture = SubResource("AtlasTexture_b7p3s")
+[node name="Sprite2D" parent="." index="1" unique_id=445617976]
+position = Vector2(142, 585)
+rotation = -0.061776787
+texture = ExtResource("1_0e48y")
