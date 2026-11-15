@@ -1,23 +1,23 @@
 extends CharacterBody2D
 
-const P = 7.0
+const P = 6.0
 
 const drag= 200.0
-var gravity = 800.0
 var dec = 0.7
+
 var resting = true
 var dragging = false
 var start = Vector2.ZERO
 
 
 func _physics_process(delta):
-	velocity.y +=  gravity * delta
+
 	var collision = move_and_collide(velocity * delta)
 	if collision:
 		
 		velocity = velocity.bounce(collision.get_normal()) *  dec
-		velocity.x *= 0.9
-		if velocity.length() < 40.0:
+		velocity.x *= 0.7
+		if velocity.length() < 20.0:
 			velocity = Vector2.ZERO
 			resting = true
 	if dragging:
@@ -48,6 +48,5 @@ func _draw():
 		var p = Vector2.ZERO
 		
 		for i in 60:
-			v.y += gravity / 60.0
 			p += v / 60.0
 			
