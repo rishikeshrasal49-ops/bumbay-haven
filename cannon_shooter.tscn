@@ -3,20 +3,14 @@
 [ext_resource type="Script" uid="uid://cf3jkc1hioxvx" path="res://character_body_2d.gd" id="1_hbr3n"]
 [ext_resource type="Texture2D" uid="uid://dfg735jfosvvn" path="res://assets/canon.png" id="2_n4fop"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n4fop"]
-size = Vector2(36, 17)
-
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=810688954]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1222313731]
 position = Vector2(3, 0)
 script = ExtResource("1_hbr3n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=525304242]
-position = Vector2(-2, 1)
-scale = Vector2(1, 0.9754862)
-shape = SubResource("RectangleShape2D_n4fop")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=9608983]
-position = Vector2(2, 2.234)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1643874233]
+position = Vector2(27, 9.536743e-07)
 rotation = -1.5707964
-scale = Vector2(0.14080344, 0.12564991)
+scale = Vector2(0.3845832, 0.4248114)
 texture = ExtResource("2_n4fop")
+flip_h = true
+flip_v = true

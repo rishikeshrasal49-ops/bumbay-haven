@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ubexjnfqdkea" path="res://assets/sea.jpg" id="1_e8j8q"]
 [ext_resource type="Texture2D" uid="uid://by42afb2cd3dk" path="res://assets/plankclean.png" id="2_iq1of"]
 [ext_resource type="PackedScene" uid="uid://co4fhvtqola8o" path="res://node_2d.tscn" id="3_36ycx"]
+[ext_resource type="PackedScene" uid="uid://4xap1andim4v" path="res://cannon_shooter.tscn" id="4_iq1of"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1vivr"]
 atlas = ExtResource("1_e8j8q")
@@ -10,13 +11,13 @@ atlas = ExtResource("1_e8j8q")
 [sub_resource type="AtlasTexture" id="AtlasTexture_8vrlf"]
 atlas = ExtResource("2_iq1of")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1vivr"]
-size = Vector2(181.4849, 20)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1cgtb"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_64e3d"]
 
 [node name="BG" type="Node2D" unique_id=1268395760]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=734502417]
-texture_filter = 1
 position = Vector2(1851.5, 330)
 scale = Vector2(5.3585715, 1.9542857)
 texture = SubResource("AtlasTexture_1vivr")
@@ -33,7 +34,7 @@ position = Vector2(1.7729512, 0.6129874)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tackle/StaticBody2D" unique_id=1583218635]
 position = Vector2(-4.0337524, -12.338989)
 scale = Vector2(1, 0.9999999)
-shape = SubResource("RectangleShape2D_1vivr")
+shape = SubResource("WorldBoundaryShape2D_1cgtb")
 
 [node name="tackle2" type="Sprite2D" parent="." unique_id=1727342104]
 position = Vector2(2091, -17)
@@ -47,15 +48,10 @@ position = Vector2(1.7729512, 0.6129874)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tackle2/StaticBody2D" unique_id=62044343]
 position = Vector2(-4.0337524, -12.338989)
 scale = Vector2(1, 0.9999999)
-shape = SubResource("RectangleShape2D_1vivr")
+shape = SubResource("WorldBoundaryShape2D_64e3d")
 
 [node name="CharacterBody2D" parent="." unique_id=533223432 instance=ExtResource("3_36ycx")]
-position = Vector2(517, 471)
+position = Vector2(417, 562)
 
-[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=1664713332]
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" unique_id=128529695]
-position = Vector2(703, 232)
-texture = ExtResource("2_iq1of")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=9560945]
+[node name="Node2D" parent="." unique_id=1268489729 instance=ExtResource("4_iq1of")]
+position = Vector2(423, 556)
