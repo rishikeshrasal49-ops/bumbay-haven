@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://hbvno2canrws"]
+
+[ext_resource type="Script" path="res://restart.gd" id="1_gkhr7"]
+[ext_resource type="Texture2D" uid="uid://ymx7rc4kuqcr" path="res://assets/WhatsApp Image 2026-11-15 at 17.02.32.jpeg" id="1_k56u2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_un2oh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d0liw"]
+
+[node name="Node2D" type="Node2D" unique_id=1957683612]
+script = ExtResource("1_gkhr7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1008495955]
+position = Vector2(676, 335)
+scale = Vector2(4.292484, 2.3709433)
+texture = ExtResource("1_k56u2")
+
+[node name="Button" type="Button" parent="." unique_id=1067254624]
+offset_left = 250.0
+offset_top = 392.0
+offset_right = 827.0
+offset_bottom = 544.0
+theme_override_font_sizes/font_size = 98
+theme_override_styles/normal = SubResource("StyleBoxFlat_un2oh")
+text = "PLAY AGAIN"
+
+[node name="Label" type="Label" parent="." unique_id=382232152]
+offset_left = 296.0
+offset_top = 105.0
+offset_right = 861.0
+offset_bottom = 376.0
+theme_override_colors/font_color = Color(18.892157, 18.892157, 13.750843, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 98
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d0liw")
+text = "YOU WIN!!
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_restart_pressed"]
