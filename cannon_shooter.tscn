@@ -11,20 +11,20 @@ size = Vector2(36, 17)
 position = Vector2(386, 386)
 script = ExtResource("1_n4fop")
 
+[node name="Node2D" type="Node2D" parent="." unique_id=670785192]
+position = Vector2(3, 0)
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1112888992]
 position = Vector2(3, 0)
 script = ExtResource("1_hbr3n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1779466076]
-position = Vector2(-2, 1)
-scale = Vector2(1, 0.9754862)
-shape = SubResource("RectangleShape2D_n4fop")
-
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=729881929]
-position = Vector2(2, 2.234)
+position = Vector2(18.143959, -50.54432)
 rotation = -1.5707964
-scale = Vector2(0.14080344, 0.12564991)
+scale = Vector2(0.3845832, 0.4248114)
 texture = ExtResource("2_n4fop")
 
-[node name="Node2D" type="Node2D" parent="." unique_id=670785192]
-position = Vector2(3, 0)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1779466076]
+position = Vector2(4.6203003, -53.914856)
+scale = Vector2(3.3809128, 2.6643925)
+shape = SubResource("RectangleShape2D_n4fop")

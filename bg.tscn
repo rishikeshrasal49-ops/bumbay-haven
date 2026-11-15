@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ubexjnfqdkea" path="res://assets/sea.jpg" id="1_e8j8q"]
 [ext_resource type="Texture2D" uid="uid://by42afb2cd3dk" path="res://assets/plankclean.png" id="2_iq1of"]
 [ext_resource type="PackedScene" uid="uid://co4fhvtqola8o" path="res://node_2d.tscn" id="3_36ycx"]
+[ext_resource type="PackedScene" uid="uid://4xap1andim4v" path="res://cannon_shooter.tscn" id="4_iq1of"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1vivr"]
 atlas = ExtResource("1_e8j8q")
@@ -49,4 +50,7 @@ scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_1vivr")
 
 [node name="CharacterBody2D" parent="." unique_id=533223432 instance=ExtResource("3_36ycx")]
-position = Vector2(534, 471)
+position = Vector2(417, 562)
+
+[node name="Node2D" parent="." unique_id=1268489729 instance=ExtResource("4_iq1of")]
+position = Vector2(418, 592)
