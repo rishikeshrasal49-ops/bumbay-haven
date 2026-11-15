@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cuvqle1jmm15n" path="res://node_2d.gd" id="1_wtcfe"]
 [ext_resource type="Texture2D" uid="uid://cchyyd3wcu5h6" path="res://assets/ball.png" id="2_0e48y"]
+[ext_resource type="Script" uid="uid://dnwerpgim0dws" path="res://camera_2d.gd" id="3_epypp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0e48y"]
 radius = 14.3178215
@@ -19,4 +20,11 @@ position = Vector2(3, 2.9999847)
 scale = Vector2(0.03387097, 0.03320984)
 texture = ExtResource("2_0e48y")
 
+<<<<<<< HEAD
 [node name="Camera2D" type="Camera2D" parent="." unique_id=526773701]
+=======
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1274596508]
+position_smoothing_enabled = true
+position_smoothing_speed = 12.0
+script = ExtResource("3_epypp")
+>>>>>>> 9126fc69aeffdc485d7af0a7afaf481a9db77060
