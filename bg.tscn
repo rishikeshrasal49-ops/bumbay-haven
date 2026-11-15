@@ -15,18 +15,13 @@ size = Vector2(181.4849, 20)
 
 [node name="BG" type="Node2D" unique_id=1268395760]
 
-[node name="CharacterBody2D" parent="." unique_id=533223432 instance=ExtResource("3_36ycx")]
-position = Vector2(612, 727)
-rotation = 0.0014816176
-scale = Vector2(7.3349056, 4.8626375)
-
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=734502417]
 position = Vector2(560, 330)
 scale = Vector2(1.6685715, 1.9542857)
 texture = SubResource("AtlasTexture_1vivr")
 
 [node name="tackle" type="Sprite2D" parent="." unique_id=1115580104]
-position = Vector2(583, 680)
+position = Vector2(642.99994, 689)
 rotation = 0.0014816177
 scale = Vector2(7.3349056, 4.8626375)
 texture = SubResource("AtlasTexture_8vrlf")
@@ -38,3 +33,6 @@ position = Vector2(1.7729512, 0.6129874)
 position = Vector2(-4.0337524, -12.338989)
 scale = Vector2(1, 0.9999999)
 shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="CharacterBody2D" parent="." unique_id=533223432 instance=ExtResource("3_36ycx")]
+position = Vector2(534, 471)
