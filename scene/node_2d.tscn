@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dbnrw71h7r46q"]
+
+[ext_resource type="PackedScene" uid="uid://tff6tmlagrea" path="res://node_2d.tscn" id="1_guiot"]
+[ext_resource type="Texture2D" uid="uid://by42afb2cd3dk" path="res://assets/plankclean.png" id="2_ppd22"]
+
+[node name="Node2D" unique_id=925119536 instance=ExtResource("1_guiot")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=445617976]
+position = Vector2(142, 585)
+rotation = -0.061776787
+texture = ExtResource("2_ppd22")
+
+[node name="CharacterBody2D2" parent="." index="2" unique_id=533223432 instance=ExtResource("1_guiot")]
+position = Vector2(-116, -16)

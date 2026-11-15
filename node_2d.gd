@@ -7,7 +7,7 @@ const speed = 300.0
 
 
 func _ready():
-	velocity = Vector2(-200, -200).normalized() * speed
+	velocity = Vector2(200, 200).normalized() * speed
 	
 func _physics_process(delta):
 	var collision = move_and_collide(velocity * delta)
