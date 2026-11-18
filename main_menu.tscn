@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dimmv2e4kwtcv"]
+
+[ext_resource type="Texture2D" uid="uid://ubexjnfqdkea" path="res://assets/sea.jpg" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://c0j5bgpks6wot" path="res://main_menu.gd" id="1_7vrkn"]
+
+[node name="main menu" type="Node2D" unique_id=722910475]
+script = ExtResource("1_7vrkn")
+
+[node name="Sea" type="Sprite2D" parent="." unique_id=1948804989]
+position = Vector2(582.5, 328)
+scale = Vector2(1.65, 1.8285714)
+texture = ExtResource("1_06t4h")
+
+[node name="Button" type="Button" parent="." unique_id=878421681]
+offset_left = 379.0
+offset_top = 282.0
+offset_right = 782.0
+offset_bottom = 385.0
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0.37072003, 0.768789, 1, 1)
+theme_override_colors/font_focus_color = Color(0.8897264, 0.9643263, 0.9989063, 1)
+theme_override_colors/font_pressed_color = Color(0.08592435, 0.87803197, 0.91943234, 1)
+theme_override_constants/outline_size = 23
+theme_override_constants/h_separation = 16
+theme_override_constants/icon_max_width = 19
+theme_override_constants/align_to_largest_stylebox = 5
+theme_override_font_sizes/font_size = 47
+text = "start"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="." unique_id=1259021117]
+offset_left = 181.0
+offset_top = 94.0
+offset_right = 930.0
+offset_bottom = 261.0
+theme_override_colors/font_color = Color(0.41960785, 0.011764706, 0, 1)
+theme_override_constants/paragraph_spacing = 6
+theme_override_constants/shadow_offset_x = 7
+theme_override_constants/shadow_offset_y = 8
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_outline_size = 3
+theme_override_font_sizes/font_size = 122
+text = " BoundaMan"
+
+[connection signal="pressed" from="Button" to="." method="_on_start_pressed"]

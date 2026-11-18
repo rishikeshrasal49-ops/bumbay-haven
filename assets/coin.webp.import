@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1nx04mk7y1or"
-path="res://.godot/imported/WhatsApp Image 2026-11-15 at 17.02.31.jpeg-727982fe72b794676c2ca09474a89fc5.ctex"
+uid="uid://bya0hrgl61i2e"
+path="res://.godot/imported/coin.webp-68f03d75471d6855baa686c643bdb9c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WhatsApp Image 2026-11-15 at 17.02.31.jpeg"
-dest_files=["res://.godot/imported/WhatsApp Image 2026-11-15 at 17.02.31.jpeg-727982fe72b794676c2ca09474a89fc5.ctex"]
+source_file="res://assets/coin.webp"
+dest_files=["res://.godot/imported/coin.webp-68f03d75471d6855baa686c643bdb9c4.ctex"]
 
 [params]
 

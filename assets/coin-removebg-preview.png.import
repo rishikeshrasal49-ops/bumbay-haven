@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds8gbdo3734qx"
-path="res://.godot/imported/sea.jpg-15861e7eff3d6c941238e3af3e924a9c.ctex"
+uid="uid://bprjsrfuomv3l"
+path="res://.godot/imported/coin-removebg-preview.png-489f4b1e0371cfe4db1f4d8231c911ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sea.jpg"
-dest_files=["res://.godot/imported/sea.jpg-15861e7eff3d6c941238e3af3e924a9c.ctex"]
+source_file="res://assets/coin-removebg-preview.png"
+dest_files=["res://.godot/imported/coin-removebg-preview.png-489f4b1e0371cfe4db1f4d8231c911ef.ctex"]
 
 [params]
 
